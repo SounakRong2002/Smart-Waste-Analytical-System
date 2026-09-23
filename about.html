@@ -1,0 +1,198 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | Smart Waste Analytical System</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+
+<header class="navbar">
+    <div class="nav-container">
+        <a href="{% url 'home' %}" class="logo">
+            <span class="logo-icon">♻</span>
+            <span>Smart Waste<small>Analytical System</small></span>
+        </a>
+        <nav class="nav-menu">
+            <a href="{% url 'home' %}">Home</a>
+            <a href="{% url 'about' %}" class="active">About</a>
+            <a href="{% url 'analytics' %}">Analytics</a>
+            <a href="{% url 'members' %}">Members</a>
+            <a href="{% url 'contact' %}">Contact</a>
+        </nav>
+        <div class="mobile-menu" id="mobileMenu">☰</div>
+    </div>
+</header>
+
+<section class="page-header">
+
+    <span class="section-tag">
+        ABOUT THE SYSTEM
+    </span>
+
+    <h1>
+        About Smart Waste Analytical System
+    </h1>
+
+    <p>
+        A data-driven platform for understanding
+        global food wastage.
+    </p>
+
+</section>
+
+
+<section class="section">
+
+    <div class="about-grid">
+
+        <div class="about-content">
+
+            <span class="section-tag">
+                OUR PURPOSE
+            </span>
+
+            <h2>
+                Making Food Waste Data Easier to Understand
+            </h2>
+
+            <p>
+                Smart Waste Analytical System is designed
+                to provide a centralized platform for
+                analyzing global food wastage data.
+            </p>
+
+            <p>
+                The system focuses on transforming raw
+                datasets into meaningful analytical
+                information through statistical analysis,
+                data visualization and comparative analysis.
+            </p>
+
+            <p>
+                Django will provide the backend infrastructure
+                for managing datasets, analytical results,
+                users and dynamic website functionality.
+            </p>
+
+        </div>
+
+
+        <div class="about-box">
+
+            <div class="about-box-icon">
+                📊
+            </div>
+
+            <h3>
+                Data → Analysis → Insight
+            </h3>
+
+            <p>
+                Our approach transforms raw food waste data
+                into understandable visual insights.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="section light-background">
+
+    <div class="section-heading">
+
+        <span class="section-tag">
+            KEY OBJECTIVES
+        </span>
+
+        <h2>
+            What the System Aims to Achieve
+        </h2>
+
+    </div>
+
+
+    <div class="objective-grid">
+
+        <div class="objective-card">
+            <h3>01</h3>
+            <h4>Analyze</h4>
+            <p>
+                Analyze global food wastage datasets
+                using statistical techniques.
+            </p>
+        </div>
+
+        <div class="objective-card">
+            <h3>02</h3>
+            <h4>Visualize</h4>
+            <p>
+                Present analytical results using
+                charts and graphical visualizations.
+            </p>
+        </div>
+
+        <div class="objective-card">
+            <h3>03</h3>
+            <h4>Compare</h4>
+            <p>
+                Compare food waste patterns across
+                countries and regions.
+            </p>
+        </div>
+
+        <div class="objective-card">
+            <h3>04</h3>
+            <h4>Understand</h4>
+            <p>
+                Help users identify important trends
+                and relationships within the data.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+<footer class="site-footer">
+    <div class="footer-content">
+        <div class="footer-brand">
+            <h3>Smart Waste Analytical System</h3>
+            <p>Understanding global food wastage through data-driven analysis and visualization.</p>
+        </div>
+
+        <div class="footer-links">
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a href="{% url 'home' %}">Home</a></li>
+                <li><a href="{% url 'about' %}">About</a></li>
+                <li><a href="{% url 'analytics' %}">Analytics</a></li>
+                <li><a href="{% url 'members' %}">Members</a></li>
+                <li><a href="{% url 'contact' %}">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-links">
+            <h4>Focus</h4>
+            <ul>
+                <li>Food Waste Trends</li>
+                <li>Regional Insights</li>
+                <li>Data Analysis</li>
+                <li>Sustainability</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="copyright-bar">
+        <p>© 2026 Smart Waste Analytical System. All rights reserved.</p>
+    </div>
+</footer>
+
+<script src="{% static 'script.js' %}"></script>
+</body>
+</html>

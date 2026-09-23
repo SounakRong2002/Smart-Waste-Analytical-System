@@ -1,0 +1,242 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Members | Smart Waste Analytical System</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+
+<header class="navbar">
+    <div class="nav-container">
+        <a href="{% url 'home' %}" class="logo">
+            <span class="logo-icon">♻</span>
+            <span>Smart Waste<small>Analytical System</small></span>
+        </a>
+        <nav class="nav-menu">
+            <a href="{% url 'home' %}">Home</a>
+            <a href="{% url 'about' %}">About</a>
+            <a href="{% url 'analytics' %}">Analytics</a>
+            <a href="{% url 'members' %}" class="active">Members</a>
+            <a href="{% url 'contact' %}">Contact</a>
+        </nav>
+        <div class="mobile-menu" id="mobileMenu">☰</div>
+    </div>
+</header>
+
+<section class="page-header">
+
+    <span class="section-tag">
+        OUR TEAM
+    </span>
+
+    <h1>
+        Project Members
+    </h1>
+
+    <p>
+        Meet the team behind the Smart Waste
+        Analytical System.
+    </p>
+
+</section>
+
+
+<section class="section">
+
+    <div class="members-grid">
+
+        <div class="member-card">
+
+            <div class="member-avatar">
+                SR
+            </div>
+
+            <h3>
+                Sounak Rong
+            </h3>
+
+            <span>
+                Project Lead
+                <br>
+                Data Analyst & Python Developer
+            </span>
+
+            <p>
+                Responsible for project coordination,
+                analytical planning and system development.
+            </p>
+
+        </div>
+
+
+        <div class="member-card">
+
+            <div class="member-avatar">
+                RM
+            </div>
+            <h3>
+                Ridhik Mandal
+
+            </h3>
+
+            <span>
+                Data Analyst & Python Developer
+            </span>
+
+            <p>
+                Responsible for data cleaning,
+                statistical analysis and visualization.
+            </p>
+
+        </div>
+
+
+        <div class="member-card">
+
+            <div class="member-avatar">
+                SD
+            </div>
+
+            <h3>
+                Shirsa Das
+            </h3>
+
+            <span>
+                Power BI Developer & Data Visualization Specialist
+            </span>
+
+            <p>
+                Responsible for backend development,
+                database integration and application logic.
+            </p>
+
+        </div>
+
+
+        <div class="member-card">
+
+            <div class="member-avatar">
+                DM
+            </div>
+
+            <h3>
+                Diya Mondal
+            </h3>
+
+            <span>
+                Django Developer
+            </span>
+
+            <p>
+                Responsible for backend development,
+                database integration and application logic.
+            </p>
+
+        </div>
+
+        <div class="member-card">
+
+            <div class="member-avatar">
+                AD
+            </div>
+
+            <h3>
+                Aritra Das
+            </h3>
+
+            <span>
+                Frontend developer & UI/UX Designer
+            </span>
+
+            <p>
+                Responsible for interface design,
+                responsive layouts and user experience.
+            </p>
+
+        </div>
+        <div class="member-card">
+
+            <div class="member-avatar">
+                SS
+            </div>
+
+            <h3>
+                Swastika Saha
+            </h3>
+
+            <span>
+                Frontend developer & UI/UX Designer
+            </span>
+
+            <p>
+                Responsible for interface design,
+                responsive layouts and user experience.
+            </p>
+
+        </div>
+
+        <div class="member-card">
+
+            <div class="member-avatar">
+                DS
+            </div>
+
+            <h3>
+                Dithi Saha
+            </h3>
+
+            <span>
+                Documentation & Deployment Specialist
+            </span>
+
+            <p>
+                Responsible for project documentation,
+                deployment and maintenance of the system.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<footer class="site-footer">
+    <div class="footer-content">
+        <div class="footer-brand">
+            <h3>Smart Waste Analytical System</h3>
+            <p>Understanding global food wastage through data-driven analysis and visualization.</p>
+        </div>
+
+        <div class="footer-links">
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a href="{% url 'home' %}">Home</a></li>
+                <li><a href="{% url 'about' %}">About</a></li>
+                <li><a href="{% url 'analytics' %}">Analytics</a></li>
+                <li><a href="{% url 'members' %}">Members</a></li>
+                <li><a href="{% url 'contact' %}">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-links">
+            <h4>Focus</h4>
+            <ul>
+                <li>Food Waste Trends</li>
+                <li>Regional Insights</li>
+                <li>Data Analysis</li>
+                <li>Sustainability</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="copyright-bar">
+        <p>© 2026 Smart Waste Analytical System. All rights reserved.</p>
+    </div>
+</footer>
+
+<script src="{% static 'script.js' %}"></script>
+</body>
+</html>

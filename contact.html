@@ -1,0 +1,147 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Smart Waste Analytical System</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+
+<header class="navbar">
+    <div class="nav-container">
+        <a href="{% url 'home' %}" class="logo">
+            <span class="logo-icon">♻</span>
+            <span>Smart Waste<small>Analytical System</small></span>
+        </a>
+        <nav class="nav-menu">
+            <a href="{% url 'home' %}">Home</a>
+            <a href="{% url 'about' %}">About</a>
+            <a href="{% url 'analytics' %}">Analytics</a>
+            <a href="{% url 'members' %}">Members</a>
+            <a href="{% url 'contact' %}" class="active">Contact</a>
+        </nav>
+        <div class="mobile-menu" id="mobileMenu">☰</div>
+    </div>
+</header>
+
+<section class="page-header">
+
+    <span class="section-tag">
+        MEMBER CONTACTS
+    </span>
+
+    <h1>
+        Team contact information
+    </h1>
+
+    <p>
+        Reach out to the members of the Smart Waste Analytical System project.
+    </p>
+
+</section>
+
+
+<section class="section">
+
+    <div class="members-grid">
+
+        <div class="member-card">
+            <div class="member-avatar">SR</div>
+            <h3>Sounak Rong</h3>
+            <span>Project Lead</span>
+             <br><span>Data Analyst &amp; Python Developer</span>
+            <p><strong>Email:</strong> sounakrong10@email.com</p>
+            <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/sounak-rong-758422346" target="_blank" rel="noopener">linkedin.com/in/sounak-rong-758422346</a></p>
+        </div>
+
+        <div class="member-card">
+            <div class="member-avatar">RM</div>
+            <h3>Ridhik Mandal</h3>
+            <span>Data Analyst &amp; Python Developer</span>
+            <p><strong>Email:</strong> ridhikmandal8@email.com</p>
+            <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/ridhik-mandal-8b7b5032b" target="_blank" rel="noopener">linkedin.com/in/ridhik-mandal-8b7b5032b</a></p>
+        </div>
+
+        <div class="member-card">
+            <div class="member-avatar">SD</div>
+            <h3>Shirsa Das</h3>
+            <span>Power BI Developer &amp; Data Visualization Specialist</span>
+            <p><strong>Email:</strong> shirsadas04@gmail.com</p>
+            <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/shirsa-das-5a639933a" target="_blank" rel="noopener">linkedin.com/in/shirsa-das-5a639933a</a></p>
+        </div>
+
+        <div class="member-card">
+            <div class="member-avatar">DM</div>
+            <h3>Diya Mondal</h3>
+            <span>Django Developer</span>
+            <p><strong>Email:</strong> mondaldiya1203@gmail.com</p>
+            <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/diya-mondal-610a6331a" target="_blank" rel="noopener">linkedin.com/in/diya-mondal-610a6331a</a></p>
+        </div>
+
+        <div class="member-card">
+            <div class="member-avatar">AD</div>
+            <h3>Aritra Das</h3>
+            <span>Frontend developer &amp; UI/UX Designer</span>
+            <p><strong>Email:</strong> daritra357@gmail.com</p>
+            <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/aritra-das-069542350" target="_blank" rel="noopener">linkedin.com/in/aritra-das-069542350</a></p>
+        </div>
+
+        <div class="member-card">
+            <div class="member-avatar">SS</div>
+            <h3>Swastika Saha</h3>
+            <span>Frontend developer &amp; UI/UX Designer</span>
+            <p><strong>Email:</strong> sahaswastika00@gmail.com</p>
+            <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/swastika-saha-932550365" target="_blank" rel="noopener">linkedin.com/in/swastika-saha-932550365</a></p>
+        </div>
+
+        <div class="member-card">
+            <div class="member-avatar">DS</div>
+            <h3>Dithi Saha</h3>
+            <span>Documentation &amp; Deployment Specialist</span>
+            <p><strong>Email:</strong> dithisaha1627@email.com</p>
+            
+        </div>
+
+    </div>
+
+</section>
+
+<footer class="site-footer">
+    <div class="footer-content">
+        <div class="footer-brand">
+            <h3>Smart Waste Analytical System</h3>
+            <p>Understanding global food wastage through data-driven analysis and visualization.</p>
+        </div>
+
+        <div class="footer-links">
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a href="{% url 'home' %}">Home</a></li>
+                <li><a href="{% url 'about' %}">About</a></li>
+                <li><a href="{% url 'analytics' %}">Analytics</a></li>
+                <li><a href="{% url 'members' %}">Members</a></li>
+                <li><a href="{% url 'contact' %}">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-links">
+            <h4>Focus</h4>
+            <ul>
+                <li>Food Waste Trends</li>
+                <li>Regional Insights</li>
+                <li>Data Analysis</li>
+                <li>Sustainability</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="copyright-bar">
+        <p>© 2026 Smart Waste Analytical System. All rights reserved.</p>
+    </div>
+</footer>
+
+<script src="{% static 'script.js' %}"></script>
+</body>
+</html>

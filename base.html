@@ -1,0 +1,93 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Smart Waste Analytical System</title>
+
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <header class="navbar">
+
+        <div class="nav-container">
+
+            <a href="{% url 'home' %}" class="logo">
+                <span class="logo-icon">♻</span>
+                <span>
+                    Smart Waste
+                    <small>Analytical System</small>
+                </span>
+            </a>
+
+            <nav class="nav-menu">
+
+                     <a href="{% url 'home' %}" class="active">
+                    Home
+                </a>
+
+                     <a href="{% url 'about' %}">
+                    About
+                </a>
+
+                     <a href="{% url 'analytics' %}">
+                    Analytics
+                </a>
+
+                     <a href="{% url 'members' %}">
+                    Members
+                </a>
+
+                     <a href="{% url 'contact' %}">
+                    Contact
+                </a>
+
+            </nav>
+
+            <div class="mobile-menu" id="mobileMenu">
+                ☰
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <!-- Main Content -->
+    <main>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+
+        <div class="footer-content">
+
+            <div>
+                <h3>Smart Waste Analytical System</h3>
+                <p>
+                    Understanding global food wastage through
+                    data-driven analysis and visualization.
+                </p>
+            </div>
+
+            <div>
+                <p>© 2026 Smart Waste Analytical System</p>
+                <p>Global Food Waste Analytics</p>
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <script src="{% static 'script.js' %}"></script>
+
+</body>
+</html>
