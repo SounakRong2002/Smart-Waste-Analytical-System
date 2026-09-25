@@ -23,8 +23,8 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/6.1/howto/deployment/checklist/
 
 # SECURITY WARNING: don't run with debug turned on in production!
-# Local development by default. Set DJANGO_DEBUG=false for deployment.
-DEBUG = os.environ.get("DJANGO_DEBUG", "True").lower() == "true"
+# Production-safe by default. Set DJANGO_DEBUG=true only for local development.
+DEBUG = os.environ.get("DJANGO_DEBUG", "False").lower() == "true"
 
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = os.environ.get("SECRET_KEY")
